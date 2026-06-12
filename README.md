@@ -13,7 +13,7 @@
 
 | Service | URL |
 |---|---|
-| **MCP Server (SSE)** | `https://Codemaster67-ResearchPaperMCP.hf.space/sse` |
+| **MCP Server (http)** | `https://Codemaster67-ResearchPaperMCP.hf.space/mcp` |
 | **LangChain Agent API** | `https://Codemaster67-GoolgeLangchainAgent.hf.space/` |
 
 ---
@@ -185,23 +185,23 @@ from langchain_mcp_adapters.client import MultiServerMCPClient
 
 client = MultiServerMCPClient({
     "ResearchAgent": {
-        "url": "https://Codemaster67-ResearchPaperMCP.hf.space/sse",
-        "transport": "sse"
+        "url": "https://Codemaster67-ResearchPaperMCP.hf.space/mcp",
+        "transport": "http"
     }
 })
 tools = await client.get_tools()
 ```
 
-### Claude Desktop (`claude_desktop_config.json`)
+
+### Google Antigravity (`mcp_config.json`)
 
 ```json
 {
-  "mcpServers": {
-    "ResearchAgent": {
-      "url": "https://Codemaster67-ResearchPaperMCP.hf.space/sse",
-      "transport": "sse"
+    "mcpServers": {
+        "ResearchAgent": {
+            "serverUrl": "https://Codemaster67-ResearchPaperMCP.hf.space/mcp"
+        }
     }
-  }
 }
 ```
 
