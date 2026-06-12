@@ -1,6 +1,6 @@
 # 🔬 Research Paper MCP Server
 
-> A powerful **Model Context Protocol (MCP)** server for AI-assisted academic research, hosted on Hugging Face Spaces. Enables LLMs to search the web, read webpages, and discover research papers with citations and PDF links — all through a clean SSE interface.
+> A powerful **Model Context Protocol (MCP)** server for AI-assisted academic research, hosted on Hugging Face Spaces. Enables LLMs to search the web, read webpages, and discover research papers with citations and PDF links.
 
 [![Hugging Face Spaces](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-orange)](https://huggingface.co/spaces/Codemaster67/ResearchPaperMCP)
 [![FastMCP](https://img.shields.io/badge/Built%20with-FastMCP-blue)](https://github.com/jlowin/fastmcp)
