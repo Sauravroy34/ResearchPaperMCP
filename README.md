@@ -48,7 +48,7 @@ MCP_For_Researcher/
 
 ## 🧠 Part 1 — MCP Server (`MCP_SERVER/`)
 
-The MCP server exposes **5 research tools** that any MCP-compatible AI agent can call directly over SSE.
+The MCP server exposes **5 research tools** that any MCP-compatible AI agent can call directly over streamable-http.
 
 ### Available Tools
 
