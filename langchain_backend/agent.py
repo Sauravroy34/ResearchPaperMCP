@@ -17,7 +17,7 @@ from langgraph.checkpoint.memory import MemorySaver
 memory_saver = MemorySaver()
 
 # --- GLOBAL STATE ---
-MCP_URL = "https://Codemaster67-ResearchPaperMCP.hf.space/sse"
+MCP_URL = "https://Codemaster67-ResearchPaperMCP.hf.space/mcp"
 
 mcp_tools = []
 agent_executor = None 
@@ -29,7 +29,7 @@ async def lifespan(app: FastAPI):
     global mcp_tools
     try:
         client = MultiServerMCPClient({
-            "ResearchAgent": { "url": MCP_URL, "transport": "sse" }
+            "ResearchAgent": { "url": MCP_URL, "transport": "http" }
         })
         mcp_tools = await client.get_tools()
         print(f"✅ Tools connected: {len(mcp_tools)}")
