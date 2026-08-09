@@ -204,7 +204,22 @@ tools = await client.get_tools()
     }
 }
 ```
-
+### Google Antigravity('mcp_config.json') in case of a context deadline errr
+```
+{
+  "mcpServers": {
+    "research-paper-mcp": {
+      "disabled": false,
+      "command": "npx.cmd", # or npx
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://codemaster67-researchpapermcp.hf.space/mcp"
+      ]
+    }
+  }
+} 
+```
 ---
 
 ## 📦 Tech Stack
